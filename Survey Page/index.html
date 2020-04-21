@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="surveystyles.css">
+    <title>Survey Form Project</title>
+  </head>
+  
+  <body>
+    <div id="form-border">
+      <h1 id="title" class="text-center">Employee Satisfaction Survey
+      </h1>
+      <p id="description">Thank you for your time and cooperation</p>
+      <form id="survey-form">
+        <div>
+          <label for="name" id="name-label" required>Name</label>
+          <input name="name" type="text" id="name" placeholder="Enter your name" class="form-control" required>
+        </div>
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input name="email" type="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div>
+          <label for="number" id="number-label">Age</label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" </input>
+        </div>
+        <p>Which option best describes your current situation?</p>
+        <div>
+          <select id="dropdown" required>
+       <option value="full-time">Full-Time</option>
+       <option value="part-time">Part-Time</option>
+       <option value="seasonal">Seasonal</option>
+      </select>
+        </div>
+        <div>
+          <p>Would you recommend friends and/or family to apply for work here?</p>
+  
+          <label>
+         <input
+            type="radio"
+            name="user-recommend"
+            class="input-radio"
+            value="absolutely"
+                >absolutely</label>
+          <div>
+            <input type="radio" name="user-recommend" class="input-radio" value="maybe">maybe</label>
+          </div>
+          <div>
+            <input type="radio" name="user-recommend" class="input-radio" value="no">No</label>
+            <p>What would you like to see in the future? Check all that apply</p>
+  
+          </div id="checkbox-part">
+          <div>
+            <label>
+           <input type="checkbox" value="increasehour">Increased Hours</label>
+          </div>
+          <div>
+            <label>
+           <input type="checkbox" value="increasewage">Increased Wages</label>
+          </div>
+          <div>
+            <label>
+           <input type="checkbox" value="morebenefits">More Benefits</label>
+          </div>
+          <div>
+            <label>
+           <input type="checkbox" value="flexible">Increased Flexibility</label>
+          </div>
+          <div>
+            <label>
+           <input type="checkbox" value="vacationtime">Increased Vacation Time</label>
+          </div>
+  
+        </div>
+  
+        <div>
+          <p>Additional comments and concerns, write below!</p>
+  
+          <textarea rows="4" cols="50">Additional comments here!</textarea>
+        </div>
+    <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  
+</body>
+</html>
